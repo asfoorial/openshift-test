@@ -1,4 +1,5 @@
-FROM redhat/ubi8
+#FROM redhat/ubi8
+FROM opensearchproject/opensearch
 RUN yum update -y
 RUN yum install -y python3
 RUN pip3.6 install --upgrade pip

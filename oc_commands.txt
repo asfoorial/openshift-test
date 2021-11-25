@@ -1,0 +1,7 @@
+oc new-build https://github.com/asfoorial/openshift-test
+oc get builds
+oc logs -f build/openshift-test-1
+
+oc new-app openshift-test --as-deployment-config --name openshift-test-app
+
+#create a route pointing to the service
